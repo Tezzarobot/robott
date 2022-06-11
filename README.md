@@ -9,7 +9,7 @@
 <img src="https://img.shields.io/github/watchers/ITZ-ZAID/Telegram?style=social" />
 <a href="https://github.com/ITZ-ZAID/Telegram"><img src="https://img.shields.io/github/repo-size/ITZ-ZAID/Telegram?style=social&logo=github" />
 <a href="https://perso.crans.org/besson/LICENSE.html"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=social&logo=github" />
-<a href="https://app.codacy.com/manual/ITZ-ZAID/Telegram/dashboard"><img src="https://img.shields.io/codacy/grade/d1726ee34f964a9a9b1ac509c6d90729?color=gold&logo=github&style=social" />
+<a href="https://app.codacy.com/manual/Muhammedalthaf174/robott/dashboard"><img src="https://img.shields.io/codacy/grade/d1726ee34f964a9a9b1ac509c6d90729?color=gold&logo=github&style=social" />
 </p>
 
 <p align="center"><img src="https://github-readme-stats.vercel.app/api/pin/?username=ITZ-ZAID&repo=Telegram&theme=dark" /></a></p>
