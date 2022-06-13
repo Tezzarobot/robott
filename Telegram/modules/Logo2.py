@@ -113,7 +113,7 @@ async def logo_gen(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [@SUPERIOR_BOTS](https://t.me/SUPERIOR_BOTS)",
+            caption="Logo by [Tezza](https://t.me/Tezza_robot)",
             force_document=False,
         )
         os.remove(flnme)
@@ -196,7 +196,7 @@ async def logo_(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [@SUPERIOR_BOTS](https://t.me/SUPERIOR_BOTS)",
+            caption="Logo by [Tezza](https://t.me/tezza_robot)",
             force_document=False,
         )
         os.remove(flnme)
