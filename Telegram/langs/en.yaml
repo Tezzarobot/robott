@@ -254,7 +254,7 @@ antispam_help: |
 
      Anti-Spam, used by bot devs to ban spammers across all groups. This helps protect
      you and your groups by removing spam flooders as quickly as possible.
-     *Note:* Users can appeal gbans or report spammers at @AnieSupports
+     *Note:* Users can appeal gbans or report spammers at @Tezzasupportgroup
 
      Anie also integrates @Spamwatch API to remove Spammers as much as possible from your chatroom!
      *What is SpamWatch?*
@@ -453,7 +453,7 @@ nation_help: |
       - /sardegnas - Lists all Sardegnas Nations.
       - /neptunians - Lists all Neptunia Nations.
       Note: These commands list users with special bot priveleges and can only be used by them.
-      You can visit @AnieBots to query more about these.
+      You can visit @Tezzasupportchannel to query more about these.
 
 nlp_help: |
 
