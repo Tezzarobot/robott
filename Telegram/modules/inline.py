@@ -43,7 +43,7 @@ def inlinequery(update: Update, _) -> None:
     results: List = []
     inline_help_dicts = [
         {
-            "title": "Account info on Anie",
+            "title": "Account info on Tezza",
             "description": "Look up a Telegram account in Anie database",
             "message_text": "Click the button below to look up a person in Anie database using their Telegram ID",
             "thumb_urL": "https://telegra.ph/file/8fd1b2351135e778700a0.jpg",
@@ -51,8 +51,8 @@ def inlinequery(update: Update, _) -> None:
         },
         {
             "title": "About",
-            "description": "Know about Anie",
-            "message_text": "Click the button below to get to know about Kigyo.",
+            "description": "Know about Tezza",
+            "message_text": "Click the button below to get to know about Tezza.",
             "thumb_urL": "https://telegra.ph/file/8fd1b2351135e778700a0.jpg",
             "keyboard": ".about ",
         },
@@ -208,7 +208,7 @@ def about(query: str, update: Update, context: CallbackContext) -> None:
     sql.update_user(user.id, user.username)
     about_text = f"""
     Anie (@{context.bot.username})
-    Maintained by [Zaid](t.me/Timesisnotwaiting)
+    Maintained by [Tezza](t.me/Althafser)
     Built with ❤️ using python-telegram-bot v{str(__version__)}
     Running on Python {python_version()}
     """
@@ -218,11 +218,11 @@ def about(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(
                     text="Support",
-                    url=f"https://t.me/AnieSupports",
+                    url=f"https://t.me/tezzasupportgroup",
                 ),
                 InlineKeyboardButton(
                     text="Channel",
-                    url=f"https://t.me/AnieBots",
+                    url=f"https://t.me/tezzasupportchannel",
                 ),
                 InlineKeyboardButton(
                     text='Ping',
@@ -232,12 +232,12 @@ def about(query: str, update: Update, context: CallbackContext) -> None:
             ],
             [
                 InlineKeyboardButton(
-                    text="GitLab",
-                    url=f"https://www.gitlab.com/ITZ-ZAID",
+                    text="Dev",
+                    url=f"https://t.me/althafser",
                 ),
                 InlineKeyboardButton(
-                    text="GitHub",
-                    url="https://www.github.com/ITZ-ZAID",
+                    text="credits",
+                    url="https://t.me/althafser",
                 ),
             ],
         ])
@@ -314,7 +314,7 @@ def spb(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(
                     text="Report Error",
-                    url=f"https://t.me/AnieSupports",
+                    url=f"https://t.me/Tezzasupportgroup",
                 ),
                 InlineKeyboardButton(
                     text="Search again",
@@ -458,7 +458,7 @@ def media_query(query: str, update: Update, context: CallbackContext) -> None:
                 [
                     InlineKeyboardButton(
                         text="Report error",
-                        url="t.me/AnieSupports",
+                        url="t.me/tezzasupportgroup",
                     ),
                     InlineKeyboardButton(
                         text="Search again",
