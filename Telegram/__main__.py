@@ -96,7 +96,7 @@ def send_help(chat_id, text, keyboard=None):
 
     if not keyboard:
         kb = paginate_modules(0, HELPABLE, "help")
-        # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/tezzasupportgroup'),
+        # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/TheSupportChat'),
         #           InlineKeyboardButton(text='Back', callback_data='start_back'),
         #           InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
         keyboard = InlineKeyboardMarkup(kb)
@@ -155,7 +155,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "support_chat_link_btn"),
-                                url='https://t.me/tezzasupportgroup',
+                                url='https://t.me/TheSupportChat',
                             ),
                             InlineKeyboardButton(
                                 text="Help",
@@ -163,7 +163,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "updates_channel_link_btn"),
-                                url="https://t.me/tezzasupportchannel",
+                                url="https://t.me/TheUpdatesChannel",
                             ),
                         ],
                     ]
@@ -239,14 +239,18 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                         ],
                         [
                             InlineKeyboardButton(
-                                text=gs(chat.id, "owner_btn"),                            url=f'https://t.me/{OWNER_USERNAME}',
-                           
+                                text=gs(chat.id, "owner_btn"),
+                                url=f'https://t.me/{OWNER_USERNAME}',
+                            ),
+                            InlineKeyboardButton(
+                                text=gs(chat.id, "source_btn"),
+                                url="https://github.com/ITZ-ZAID/Telegram",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "support_chat_link_btn"),
-                                url='https://t.me/tezzasupportgroup',
+                                url='https://t.me/TheSupportChat',
                             ),
                             InlineKeyboardButton(
                                 text="Help",
@@ -254,7 +258,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "updates_channel_link_btn"),
-                                url="https://t.me/tezzasupportchannel",
+                                url="https://t.me/TheUpdatesChannel",
                             ),
                         ],
                     ]
