@@ -336,7 +336,7 @@ def stats(update, context):
             "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS]) +
             "\n\n[⍙ GitHub](https://github.com/ITZ-ZAID) | [⍚ GitLab](https://gitlab.com/ITZ-ZAID)\n\n" +
-            "╘══「 by [Zaid](https://t.me/Timesisnotwaiting) 」\n",
+            "╘══「 by [𝞓𝙇𝙏𝙃𝞓𝙁](https://t.me/Althafser) 」\n",
         parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(kb), disable_web_page_preview=True)
     except BaseException:
         update.effective_message.reply_text(
