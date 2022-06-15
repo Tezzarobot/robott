@@ -238,7 +238,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "add_bot_to_group_btn"),
-                                url="t.me/tezza_robot?startgroup=true".format(
+                                url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
                             ),
@@ -409,7 +409,7 @@ def get_help(update: Update, context: CallbackContext):
                             [
                                 InlineKeyboardButton(
                                     text="Help",
-                                    url="t.me/tezza_robot?start=ghelp_{}".format(
+                                    url="t.me/{}?start=ghelp_{}".format(
                                         context.bot.username, module
                                     ),
                                 )
@@ -431,7 +431,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Help",
-                            url="t.me/tezza_robot?start=help".format(context.bot.username),
+                            url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
                 ]
@@ -633,7 +633,7 @@ def get_settings(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Settings",
-                            url="t.me/tezza_robot?start=stngs_{}".format(
+                            url="t.me/{}?start=stngs_{}".format(
                                 context.bot.username, chat.id
                             ),
                         )
