@@ -322,7 +322,6 @@ def stats(update, context):
     status += "*• Python version:* " + python_version() + "\n"
     status += "*• python-telegram-bot:* " + str(ptbver) + "\n"
     status += "*• Uptime:* " + str(botuptime) + "\n"
-    status += "*• Database size:* " + str(db_size) + "\n"
     kb = [
           [
            InlineKeyboardButton('Ping', callback_data='pingCB')
@@ -335,7 +334,7 @@ def stats(update, context):
         update.effective_message.reply_text(status +
             "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS]) +
-            "\n\n[⍙ GitHub](https://github.com/ITZ-ZAID) | [⍚ GitLab](https://gitlab.com/ITZ-ZAID)\n\n" +
+            "\n\n[✯Support](https://tezzasupportgroup) | [✯Updates](https://tezzasupportchannel)\n\n" +
             "╘══「 by [𝞓𝙇𝙏𝙃𝞓𝙁](https://t.me/Althafser) 」\n",
         parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(kb), disable_web_page_preview=True)
     except BaseException:
@@ -346,9 +345,9 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + "\n\n⍙ [GitHub](https://github.com/ITZ-ZAID) | ⍚ [GitLab](https://gitlab.com/ITZ-ZAID)\n\n"
+                    + "\n\n✯ [Support](https://tezzasupportgroup) | ✯ [Updates](https://tezzasupportchannel)\n\n"
                 )
-                + "╘══「 by [Zaid](https://t.me/Timesisnotwaiting) 」\n"
+                + "╘══「 by [𝞓𝙇𝙏𝙃𝞓𝙁](https://t.me/Althafser) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(kb),
