@@ -150,12 +150,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
-                            ),
-                        ],
-                        [
-                            InlineKeyboardButton(
-                                text=gs(chat.id, "owner_btn"),                                url=f'https://t.me/{OWNER_USERNAME}',
-                         
+                            ),                       
                         ],
                         [
                             InlineKeyboardButton(
@@ -240,12 +235,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
-                            ),
-                        ],
-                        [
-                            InlineKeyboardButton(
-                                text=gs(chat.id, "owner_btn"),
-                                url=f'https://t.me/{OWNER_USERNAME}',                            
+                            ),                                                    
                         ],
                         [
                             InlineKeyboardButton(
