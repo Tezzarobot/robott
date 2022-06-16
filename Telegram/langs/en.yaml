@@ -199,7 +199,7 @@ FED_USER_HELP: |
     • `/frules`*:* See Federation regulations
 
 formt_help_bse: |
-    Anie supports a large number of formatting options to make your messages more expressive. Take a look!
+    Tezza supports a large number of formatting options to make your messages more expressive. Take a look!
 
 md_help: |
     <b>Markdown Formatting</b>
@@ -357,8 +357,8 @@ misc_help: |
       Tired of telegram's stupidity? well here you go
       *Available commands:*
       • /antichannel <on/off>: Bans and deletes anyone who tries to talk as channel and forces em to talk as themselves
-      • /antilinkedchan <on/off>: Makes Kigyo automatically delete linked channel posts from chatroom
-      • /antichannelpin <on/off>: Makes Kigyo automatically unpin linked channel posts from chatroom
+      • /antilinkedchan <on/off>: Makes Tezza automatically delete linked channel posts from chatroom
+      • /antichannelpin <on/off>: Makes Tezza automatically unpin linked channel posts from chatroom
 
 muting_help: |
       *Admins only:*
