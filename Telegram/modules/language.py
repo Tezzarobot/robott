@@ -48,7 +48,7 @@ def set_lang(update: Update, _) -> None:
         [
             InlineKeyboardButton(
                 text="Help us in translations",
-                url="https://Muhammedalthaf174/ITZ-ZAID",
+                url="https://Tezzarobot/robott",
             )
         ]
     )
