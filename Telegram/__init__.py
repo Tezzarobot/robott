@@ -52,7 +52,8 @@ class AnieINIT:
     def __init__(self, parser: ConfigParser):
         self.parser = parser
         self.SYS_ADMIN: int = self.parser.getint('SYS_ADMIN', 0)
-        self.OWNER_ID: int = self.parser.getint('OWNER_ID') 
+        self.OWNER_ID: int = self.parser.getint('OWNER_ID')
+        self.STRING_SESSION: str = self.parser.get("STRING_SESSION") 
         self.OWNER_USERNAME: str = self.parser.get('OWNER_USERNAME', None)
         self.APP_ID: str = self.parser.getint("APP_ID")
         self.API_HASH: str = self.parser.get("API_HASH")
@@ -141,6 +142,25 @@ CF_API_KEY = ZInit.CF_API_KEY
 
 # SpamWatch
 sw = ZZInit.init_sw()
+
+API_HASH = '4e984ea35f854762dcde906dce426c2d'
+API_ID = '6435225'
+STRING_SESSION = ZInit.STRING_SESSION
+WORKERS = 8
+
+from Telegram.modules.sql import SESSION
+
+updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
+telethn = TelegramClient(MemorySession(), APP_ID, API_HASH)
+ubot2 = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
+try:
+    ubot2.start()
+except BaseException:
+    print("Userbot Error ! Have you added a STRING_SESSION in deploying??")
+    sys.exit(1)
+
+dispatcher = updater.dispatcher
+
 
 
 # Load at end to ensure all prev variables have been set
