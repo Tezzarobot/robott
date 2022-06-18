@@ -143,10 +143,6 @@ CF_API_KEY = ZInit.CF_API_KEY
 sw = ZZInit.init_sw()
 
 
-dispatcher = updater.dispatcher
-
-
-
 # Load at end to ensure all prev variables have been set
 from Telegram.modules.helper_funcs.handlers import CustomCommandHandler
 
