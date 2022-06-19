@@ -85,12 +85,6 @@ approve_help: |
      • `/approved`*:* List all approved users.
      • `/unapproveall`*:* Unapprove *ALL* users in a chat. This cannot be undone.
 
-backup_help: |
-    *Admin only:*
-     - /import: reply to a group butler backup file to import as much as possible, making the transfer super simple! Note \
-       that files/photos can't be imported due to telegram restrictions.
-     - /export: Export group data, which will be exported are: rules, notes (documents, images, music, video, audio, voice, text, text buttons)
-
 bans_help: |
     - /kickme: kicks the user who issued the command
 
